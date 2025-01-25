@@ -13,11 +13,6 @@
         --main-color: rgb(54, 57, 88);
         --secondary-color: rgb(250, 190, 76);
         --text-color: rgb(62, 62, 62);
-        --olive-green: linear-gradient(
-          180deg,
-          rgb(164, 188, 70),
-          rgb(133, 160, 25) 100%
-        );
       }
 
       .bebas-neue {
@@ -30,17 +25,315 @@
       .small-header {
         font-size: 1.5rem;
         color: var(--main-color);
+        font-weight: bold;
+        font-family: "Roboto", serif;
+      }
+
+      .box-shadow {
+        box-shadow: 5px 5px 10px #cccccc, -5px -5px 10px #f4f4f4;
       }
     </style>
+    <script
+      src="https://kit.fontawesome.com/5bc67b8b0e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <header class="max-w-full">
-      <nav class="max-w-7xl border bg-red-500 mx-auto">
-        <div class="logo">
-          <img src="icons/logo.png" alt="logo img" />
-          <h1>Penguin Fashion</h1>
+  <body class="space-y-20">
+    <header class="max-w-full bg-amber-50">
+      <nav
+        class="max-w-7xl mx-auto flex justify-between items-center px-3 md:px-5 [1300px]:px-0 pt-5 lg:pt-10"
+      >
+        <div class="logo w-52 sm:w-60 md:w-64 lg:w-72">
+          <img class="w-full" src="icons/logo.png" alt="logo img" />
         </div>
+        <div class="menu-icon text-2xl lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul
+          class="nav-items hidden lg:flex gap-12 text-base font-medium roboto text-[var(--main-color)]"
+        >
+          <li><a href="">Home</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Contact us</a></li>
+        </ul>
       </nav>
+
+      <div
+        class="banner-section max-w-7xl mx-auto mt-7 sm:px-4 md:px-5 [1300px]:px-0 md:flex flex-row-reverse gap-28 items-center justify-end space-y-5 sm:space-y-8 lg:space-y-0 px-3 pb-5"
+      >
+        <div class="banner-img">
+          <img class="mx-auto" src="images/model.png" alt="" />
+        </div>
+
+        <div class="banner-text text-center md:text-left space-y-3">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl bebas-neue uppercase">
+            <span class="text-[var(--secondary-color)]"> Be the Penguins </span>
+            <br />
+            <span class="text-[var(--main-color)]">of Winter</span>
+          </h1>
+
+          <p class="text-[var(--text-color)] text-base roboto lg:w-4/5">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button
+            class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+          >
+            <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+          </button>
+        </div>
+      </div>
     </header>
+
+    <!-- product section starts -->
+    <section
+      class="card-section space-y-24 max-w-7xl mx-auto px-3 md:px-5 [1300px]:px-0"
+    >
+      <div class="woman-jacket">
+        <h1
+          class="text-center md:text-left text-3xl md:text-4xl lg:text-5xl text-[var(--main-color)] bebas-neue mb-5"
+        >
+          Woman Jacket
+        </h1>
+        <div
+          class="cards-container grid md:grid-cols-2 lg:grid-cols-3 justify-center lg:justify-between gap-5 lg:gap-7"
+        >
+          <div
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+          >
+            <div class="p-5 bg-[#f1f1f1] rounded-2xl">
+              <img src="images/jacket-1.png" alt="jacket-1" />
+            </div>
+            <h2 class="small-header">Yellow Coat Jacket</h2>
+            <p class="text-base text-[var(--text-color)] roboto">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <div class="price-btn flex justify-between items-center">
+              <p
+                class="price text-4xl text-[var(--secondary-color)] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+              >
+                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+          >
+            <div class="p-5 bg-[#f1f1f1] rounded-2xl">
+              <img src="images/jacket-2.png" alt="jacket-2" />
+            </div>
+            <h2 class="small-header">Yellow Coat Jacket</h2>
+            <p class="text-base text-[var(--text-color)] roboto">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <div class="price-btn flex justify-between items-center">
+              <p
+                class="price text-4xl text-[var(--secondary-color)] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+              >
+                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+          >
+            <div class="p-5 bg-[#f1f1f1] rounded-2xl">
+              <img src="images/jacket-3.png" alt="jacket-3" />
+            </div>
+            <h2 class="small-header">Yellow Coat Jacket</h2>
+            <p class="text-base text-[var(--text-color)] roboto">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <div class="price-btn flex justify-between items-center">
+              <p
+                class="price text-4xl text-[var(--secondary-color)] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+              >
+                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="man-jacket">
+        <h1
+          class="text-center md:text-left text-3xl md:text-4xl lg:text-5xl text-[var(--main-color)] bebas-neue mb-5"
+        >
+          Man Jacket
+        </h1>
+        <div
+          class="cards-container grid md:grid-cols-2 lg:grid-cols-3 justify-center lg:justify-between gap-5 lg:gap-7"
+        >
+          <div
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+          >
+            <div class="p-5 bg-[#f1f1f1] rounded-2xl">
+              <img src="images/jacket-4.png" alt="jacket-4" />
+            </div>
+            <h2 class="small-header">Yellow Coat Jacket</h2>
+            <p class="text-base text-[var(--text-color)] roboto">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <div class="price-btn flex justify-between items-center">
+              <p
+                class="price text-4xl text-[var(--secondary-color)] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+              >
+                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+          >
+            <div class="p-5 bg-[#f1f1f1] rounded-2xl">
+              <img src="images/jacket-5.png" alt="jacket-5" />
+            </div>
+            <h2 class="small-header">Yellow Coat Jacket</h2>
+            <p class="text-base text-[var(--text-color)] roboto">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <div class="price-btn flex justify-between items-center">
+              <p
+                class="price text-4xl text-[var(--secondary-color)] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+              >
+                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+          >
+            <div class="p-5 bg-[#f1f1f1] rounded-2xl">
+              <img src="images/jacket-6.png" alt="jacket-6" />
+            </div>
+            <h2 class="small-header">Yellow Coat Jacket</h2>
+            <p class="text-base text-[var(--text-color)] roboto">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <div class="price-btn flex justify-between items-center">
+              <p
+                class="price text-4xl text-[var(--secondary-color)] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+              >
+                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product section ends -->
+
+    <!-- about section starts -->
+    <section
+      class="about max-w-7xl mx-auto px-3 md:px-5 [1300px]:px-0 flex flex-col lg:flex-row-reverse gap-y-20 lg:gap-20 items-center lg:justify-between"
+    >
+      <div class="about-image flex-1 flex items-center justify-center">
+        <img
+          class="w-[90%] sm:max-w-4/5 lg:max-w-full lg:w-full"
+          src="images/shopping.png"
+          alt=""
+        />
+      </div>
+
+      <div class="about-text flex-1">
+        <div class="about-card container flex flex-col gap-y-4">
+          <div
+            class="about-card p-5 box-shadow rounded-2xl flex flex-col lg:flex-row text-center lg:text-left gap-1 lg:gap-8 items-center"
+          >
+            <div class="w-20 h-20">
+              <img class="w-full h-full" src="icons/house.png" alt="" />
+            </div>
+            <div class="flex flex-col justify-center gap-y-2">
+              <h2 class="small-header">Find the Perfect Fit</h2>
+              <p class="text-base text-[var(--text-color)]">
+                Everybody is different, which is why we offer styles for every
+                body.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="about-card p-5 box-shadow rounded-2xl flex flex-col lg:flex-row text-center lg:text-left gap-1 lg:gap-8 items-center"
+          >
+            <div class="w-20 h-20">
+              <img class="w-full h-full" src="icons/box.png" alt="" />
+            </div>
+            <div class="flex flex-col justify-center gap-y-2">
+              <h2 class="small-header">Free Exchanges</h2>
+              <p class="text-base text-[var(--text-color)]">
+                Everybody is different, which is why we offer styles for every
+                body.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="about-card p-5 box-shadow rounded-2xl flex flex-col lg:flex-row text-center lg:text-left gap-1 lg:gap-8 items-center"
+          >
+            <div class="w-20 h-20">
+              <img class="w-full h-full" src="icons/question.png" alt="" />
+            </div>
+            <div class="flex flex-col justify-center gap-y-2">
+              <h2 class="small-header">Contact Our Seller</h2>
+              <p class="text-base text-[var(--text-color)]">
+                Everybody is different, which is why we offer styles for every
+                body.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- footer starts -->
+    <footer class="bg-amber-100 p-8 mb-0">
+      <p class="text-center text-lg text-[var(--main-color)] font-bold">
+        &copy; 2025 Penguin Fashion. <span class="sm:hidden"><br /></span> All
+        rights reserved.
+      </p>
+    </footer>
+    <!-- footer ends -->
   </body>
 </html>
