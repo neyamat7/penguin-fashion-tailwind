@@ -32,6 +32,9 @@
       .box-shadow {
         box-shadow: 5px 5px 10px #cccccc, -5px -5px 10px #f4f4f4;
       }
+      button {
+        cursor: pointer;
+      }
     </style>
     <script
       src="https://kit.fontawesome.com/5bc67b8b0e.js"
@@ -52,10 +55,26 @@
         <ul
           class="nav-items hidden lg:flex gap-12 text-base font-medium roboto text-[var(--main-color)]"
         >
-          <li><a href="">Home</a></li>
-          <li><a href="">Product</a></li>
-          <li><a href="">About us</a></li>
-          <li><a href="">Contact us</a></li>
+          <li
+            class="hover:text-[var(--secondary-color)] transition-all duration-300 ease-in-out"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="hover:text-[var(--secondary-color)] transition-all duration-300 ease-in-out"
+          >
+            <a href="">Product</a>
+          </li>
+          <li
+            class="hover:text-[var(--secondary-color)] transition-all duration-300 ease-in-out"
+          >
+            <a href="">About us</a>
+          </li>
+          <li
+            class="hover:text-[var(--secondary-color)] transition-all duration-300 ease-in-out"
+          >
+            <a href="">Contact us</a>
+          </li>
         </ul>
       </nav>
 
@@ -78,7 +97,7 @@
             industry.
           </p>
           <button
-            class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+            class="bg-[#A4BC46] border border-[#A4BC46] text-base py-4 px-8 text-white rounded-lg hover:bg-transparent hover:text-black transition-all duration-300"
           >
             <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
           </button>
@@ -100,7 +119,7 @@
           class="cards-container grid md:grid-cols-2 lg:grid-cols-3 justify-center lg:justify-between gap-5 lg:gap-7"
         >
           <div
-            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3 hover:border transition-all"
           >
             <div class="p-5 bg-[#f1f1f1] rounded-2xl">
               <img src="images/jacket-1.png" alt="jacket-1" />
@@ -117,7 +136,7 @@
                 $234
               </p>
               <button
-                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg hover:bg-transparent hover:text-black transition-all duration-300 border border-[#A4BC46]"
               >
                 <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
               </button>
@@ -125,7 +144,7 @@
           </div>
 
           <div
-            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3 hover:border transition-all"
           >
             <div class="p-5 bg-[#f1f1f1] rounded-2xl">
               <img src="images/jacket-2.png" alt="jacket-2" />
@@ -142,7 +161,7 @@
                 $234
               </p>
               <button
-                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg hover:bg-transparent hover:text-black transition-all duration-300 border border-[#A4BC46]"
               >
                 <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
               </button>
@@ -150,7 +169,7 @@
           </div>
 
           <div
-            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3 hover:border transition-all"
           >
             <div class="p-5 bg-[#f1f1f1] rounded-2xl">
               <img src="images/jacket-3.png" alt="jacket-3" />
@@ -167,7 +186,7 @@
                 $234
               </p>
               <button
-                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg hover:bg-transparent hover:text-black transition-all duration-300 border border-[#A4BC46]"
               >
                 <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
               </button>
@@ -186,7 +205,7 @@
           class="cards-container grid md:grid-cols-2 lg:grid-cols-3 justify-center lg:justify-between gap-5 lg:gap-7"
         >
           <div
-            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3 hover:border transition-all"
           >
             <div class="p-5 bg-[#f1f1f1] rounded-2xl">
               <img src="images/jacket-4.png" alt="jacket-4" />
@@ -203,7 +222,7 @@
                 $234
               </p>
               <button
-                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg hover:bg-transparent hover:text-black transition-all duration-300 border border-[#A4BC46]"
               >
                 <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
               </button>
@@ -211,7 +230,7 @@
           </div>
 
           <div
-            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3 hover:border transition-all"
           >
             <div class="p-5 bg-[#f1f1f1] rounded-2xl">
               <img src="images/jacket-5.png" alt="jacket-5" />
@@ -228,7 +247,7 @@
                 $234
               </p>
               <button
-                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg hover:bg-transparent hover:text-black transition-all duration-300 border border-[#A4BC46]"
               >
                 <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
               </button>
@@ -236,7 +255,7 @@
           </div>
 
           <div
-            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3"
+            class="card box-shadow rounded-2xl max-w-[370px] p-[18px] bg-white space-y-3 hover:border transition-all"
           >
             <div class="p-5 bg-[#f1f1f1] rounded-2xl">
               <img src="images/jacket-6.png" alt="jacket-6" />
@@ -253,7 +272,7 @@
                 $234
               </p>
               <button
-                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg"
+                class="bg-[#A4BC46] text-base py-4 px-8 text-white rounded-lg hover:bg-transparent hover:text-black transition-all duration-300 border border-[#A4BC46]"
               >
                 <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
               </button>
